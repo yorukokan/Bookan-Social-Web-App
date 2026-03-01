@@ -1,0 +1,410 @@
+/*    Ad: Okan
+   Soyad: Yörük
+      No: 22100011067    */
+
+.book-detail-wrapper 
+{
+  padding: 50px 0;
+}
+
+
+.book-detail-top 
+{
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+
+.book-cover 
+{
+  width: 280px;
+  height: 400px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+.book-cover img 
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-info 
+{
+  flex: 1;
+}
+
+.book-info h1 
+{
+  font-size: 34px;
+  margin-bottom: 8px;
+  color: var(--c1);
+}
+
+.book-info h3 
+{
+  font-size: 20px;
+  color: var(--c2);
+  margin-bottom: 16px;
+}
+
+.book-info .actions 
+{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.action-btn 
+{
+  background: var(--c4);
+  color: var(--c1);
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-btn:hover 
+{
+  background: var(--c1);
+  color: #fff;
+}
+
+.action-btn.primary
+{
+    background: var(--c2);
+    color: #fff;
+}
+
+.action-btn.primary:hover 
+{
+    background: var(--c1);
+}
+
+.action-btn.favorite-passive 
+{
+    background: var(--c4);
+    color: var(--c1);
+}
+
+.action-btn.favorite-passive:hover 
+{
+    background: var(--c1);
+    color: #fff;
+}
+
+.action-btn.favorite-active {
+    background: #ffecb3;
+    color: #cc9900; 
+    border: 1px solid #ffcc66;
+    font-weight: 700;
+}
+
+.action-btn.favorite-active:hover 
+{
+    background: #ffcc66; 
+    color: var(--c1);
+}
+
+.book-info p 
+{
+  font-size: 15px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.quotes-title 
+{
+  font-size: 26px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: var(--c1);
+}
+
+.quotes-list .quote-card 
+{
+  background: #fff;
+  padding: 18px 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.09);
+  margin-bottom: 18px;
+}
+
+.quote-card p 
+{
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.quote-card small 
+{
+  color: #666;
+  font-size: 13px;
+}
+
+.action-dropdown 
+{
+    position: relative;
+}
+
+.dropdown-content 
+{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid var(--c4);
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 10px 0;
+    z-index: 10;
+    min-width: 250px;
+    display: none;
+    margin-top: 5px; 
+}
+
+.dropdown-content.show
+{
+    display: block;
+}
+
+.dropdown-item 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.dropdown-item:hover 
+{
+    background: var(--c5);
+}
+
+.dropdown-item form 
+{
+    display: inline;
+    margin: 0;
+}
+
+.dropdown-item button 
+{
+    background: none;
+    border: none;
+    color: var(--c2);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.dropdown-item.in-list 
+{
+    color: green;
+    font-weight: 700;
+}
+
+.dropdown-item.in-list button 
+{
+    color: #a30000; 
+}
+
+.rating-info
+{
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+.rating-stars 
+{
+    display: inline-block;
+    color: #ffcc66;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.star-input-group 
+{
+    display: flex;
+    flex-direction: row-reverse; 
+    align-items: center; 
+}
+
+.star-input-group input
+{
+    display: none;
+}
+
+.star-input-group label 
+{
+    cursor: pointer;
+    width: 28px; 
+    font-size: 28px; 
+    line-height: 1;
+    overflow: hidden;
+    transition: color 0.2s;
+}
+
+.star-input-group label:before 
+{
+    content: "★";
+    color: #ccc; 
+}
+
+.star-input-group input:checked ~ label:before,.star-input-group label:hover ~ label:before,.star-input-group label:hover:before 
+{
+    color: gold; 
+}
+
+.user-rating-form 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed var(--c4);
+}
+
+.reviews-section
+ {
+    margin-top: 50px;
+}
+
+.review-form-wrapper 
+{
+    background: var(--c5); 
+    padding: 20px; 
+    border-radius: 12px;
+    margin-bottom: 30px;
+    box-shadow: none; 
+    border: 1px solid var(--c4); 
+}
+
+.review-form-wrapper h3 
+{
+    font-size: 18px; 
+    color: var(--c1);
+    margin-bottom: 15px;
+}
+
+.review-form-wrapper textarea 
+{
+    width: 100%;
+    padding: 14px; 
+    border: 1px solid var(--c3);
+    border-radius: 12px; 
+    resize: vertical;
+    min-height: 100px;
+    margin-bottom: 15px;
+    font-size: 15px; 
+}
+.review-form-wrapper textarea:focus 
+{
+    border-color: var(--c2);
+    box-shadow: 0 0 0 3px rgba(127,26,61,0.15);
+}
+
+
+.review-form-actions 
+{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; 
+    gap: 15px; 
+}
+
+.review-card 
+{
+    background: #fff;
+    padding: 22px 24px; 
+    border-radius: 18px; 
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08); 
+    margin-bottom: 22px;
+    transition: 0.25s ease;
+}
+
+.review-card:hover 
+{
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.13);
+}
+
+.review-header 
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: none;
+}
+
+.review-user-info 
+{
+    font-weight: 700; 
+    color: var(--c1);
+    font-size: 16px;
+}
+
+.review-user-info a 
+{
+    color: var(--c2);
+}
+
+.review-rating-stars 
+{
+    font-size: 20px; 
+    color: gold;
+}
+
+.review-text 
+{
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.review-date 
+{
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+    display: block;
+}
+
+@media (max-width: 900px) 
+{
+  .book-detail-top 
+  {
+    flex-direction: column;
+    align-items: center;
+  }
+  .book-cover 
+  {
+    width: 220px;
+    height: 320px;
+  }
+  .book-info 
+  {
+    text-align: center;
+  }
+  .book-info .actions 
+  {
+      justify-content: center;
+  }
+}

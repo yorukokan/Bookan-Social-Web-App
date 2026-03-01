@@ -1,0 +1,120 @@
+/*    Ad: Okan
+   Soyad: Yörük
+      No: 22100011067    */
+
+.register-wrapper 
+{
+  width: 900px;
+  max-width: 95%;
+  background: #fff;
+  border-radius: 24px;
+  overflow: hidden;
+  margin: 60px auto;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+  display: flex;
+  min-height: 520px;
+}
+
+.register-left 
+{
+  width: 50%;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.register-left h2 
+{
+  font-size: 32px;
+  color: var(--c1);
+  margin-bottom: 10px;
+}
+
+.register-left p 
+{
+  color: #555;
+  margin-bottom: 25px;
+}
+
+
+
+.register-input
+{
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  border: 1px solid var(--c3);
+  border-radius: 12px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.register-input:focus 
+{
+  border-color: var(--c2);
+  box-shadow: 0 0 0 3px rgba(127,26,61,0.15);
+}
+
+
+.register-btn 
+{
+  width: 100%;
+  padding: 14px;
+  background: var(--c2);
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.register-btn:hover 
+{
+  background: var(--c1);
+}
+
+.register-left .login-link 
+{
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.login-link a 
+{
+  color: var(--c2);
+  font-weight: bold;
+}
+
+.register-right 
+{
+  width: 50%;
+  background: linear-gradient(135deg,var(--c1), var(--c2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-right img 
+{
+  width: 100%;
+  filter: drop-shadow(0 10px 25px rgba(0,0,0,0.25));
+}
+
+@media(max-width: 850px) 
+{
+  .register-wrapper 
+  {
+    flex-direction: column;
+  }
+  .register-right 
+  {
+    display: none;
+  }
+  .register-left 
+  {
+    width: 100%;
+  }
+}

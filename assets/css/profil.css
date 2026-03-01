@@ -1,0 +1,344 @@
+/*    Ad: Okan
+   Soyad: Yörük
+      No: 22100011067    */
+
+.profile-wrapper 
+{
+  padding: 40px 0;
+  max-width: 900px;
+  margin: auto;
+}
+
+.profile-card
+{
+  background: #fff;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.09);
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: nowrap; 
+  justify-content: flex-start;
+  overflow-x: auto; 
+}
+
+.avatar-container 
+{
+  position: relative;
+  display: inline-block;
+  width: 110px;
+  flex-shrink: 0;
+}
+
+.profile-avatar 
+{
+  width: 110px;
+  height: 110px;
+  background: var(--c3);
+  border-radius: 50%;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  object-fit: cover;
+}
+
+.upload-btn 
+{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: var(--c2); 
+  color: white;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.2s;
+}
+
+.upload-btn:hover 
+{
+    background-color: var(--c1);
+}
+
+.upload-btn input[type="file"] 
+{
+    display: none;
+}
+
+.profile-info 
+{
+  flex-shrink: 1; 
+  min-width: 180px;
+  flex-grow: 1; 
+}
+
+.profile-info h2 
+{
+  font-size: 32px;
+  color: var(--c1);
+  margin-bottom: 5px;
+}
+
+.profile-info p 
+{
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.stats-box-inner 
+{
+    display: flex;
+    gap: 15px;
+    padding-left: 15px; 
+    border-left: 1px solid #eee; 
+    margin-left: auto;
+    flex-shrink: 0;
+}
+
+.stat-item 
+{
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 12px;
+  flex-shrink: 0; 
+  min-width: 70px; 
+}
+
+.stats-box-inner a.stat-item 
+{
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.stats-box-inner a.stat-item:hover 
+{
+  background-color: var(--c5);
+}
+
+.stat-item h3 
+{
+  font-size: 24px; 
+  font-weight: 700;
+  color: var(--c2);
+  margin-bottom: 4px;
+  white-space: nowrap; 
+}
+
+.stat-item p 
+{
+  font-size: 13px;
+  color: #666;
+  white-space: nowrap;
+}
+
+.section-title {
+    font-size: 24px;
+    color: var(--c1);
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.quote-card-profile 
+{
+    background: #fff;
+    padding: 22px 24px;
+    border-radius: 18px;
+    box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+    margin-bottom: 22px;
+}
+
+.quote-book-link 
+{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    color: var(--c2);
+}
+
+.book-cover-small 
+{
+    width: 40px;
+    height: 60px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.book-cover-small img 
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.quote-content-profile 
+{
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    padding: 10px 0;
+    border-left: 3px solid var(--c4);
+    padding-left: 15px;
+    margin: 10px 0;
+}
+
+.quote-date-profile 
+{
+    font-size: 13px;
+    color: #999;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.no-content 
+{
+    text-align: center;
+    color: #999;
+    padding: 30px;
+    background: #fff;
+    border-radius: 18px;
+}
+.user-list-grid 
+{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.user-card 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    transition: background-color 0.2s;
+}
+
+.user-card:hover 
+{
+    background-color: var(--c5);
+}
+
+.user-info-wrapper 
+{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: inherit;
+    flex-grow: 1;
+}
+
+.user-avatar-large 
+{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    border: 3px solid var(--c4); 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.username-large 
+{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--c1);
+    transition: color 0.2s;
+    display: flex; 
+    align-items: center; 
+    height: 60px; 
+}
+
+.user-info-wrapper:hover .username-large 
+{
+    color: var(--c2);
+}
+
+.list-card 
+{
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.2s ease;
+}
+.list-card:hover 
+{
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+.list-card-info 
+{
+    flex-grow: 1;
+}
+.list-card-info h4
+{
+    font-size: 18px;
+    color: var(--c1);
+    margin-bottom: 5px;
+}
+.list-card-info p 
+{
+    font-size: 13px;
+    color: #777;
+}
+.list-card-actions 
+{
+    flex-shrink: 0;
+    display: flex;
+    gap: 10px;
+}
+.list-card-actions .btn 
+{
+    padding: 8px 12px;
+    font-size: 13px;
+}
+.list-grid 
+{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+}
+
+@media (max-width: 768px) 
+{
+    .profile-card 
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap; 
+        overflow-x: hidden;
+    }
+    
+    .stats-box-inner 
+    {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 0;
+        border-left: none;
+        border-top: 1px solid #eee;
+        padding-top: 20px;
+        margin-top: 20px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .profile-info 
+    {
+        text-align: center;
+        width: 100%;
+    }
+}

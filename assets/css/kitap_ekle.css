@@ -1,0 +1,67 @@
+/*    Ad: Okan
+   Soyad: Yörük
+      No: 22100011067    */
+
+.kitap-ekle-form-wrapper 
+{
+    background: #fff;
+    padding: 30px; 
+    border-radius: 18px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    max-width: 650px; 
+    margin: 50px auto;
+}
+
+.kitap-ekle-form-wrapper h2 
+{
+    font-size: 24px;
+    color: var(--c1);
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--c5);
+    padding-bottom: 10px;
+}
+
+.kitap-ekle-form-wrapper input[type="text"],.kitap-ekle-form-wrapper input[type="file"],
+.kitap-ekle-form-wrapper select,.kitap-ekle-form-wrapper textarea 
+{
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid var(--c4); 
+    border-radius: 10px; 
+    margin-bottom: 15px;
+    font-size: 15px;
+    background-color: var(--c5);
+    transition: 0.2s ease;
+}
+
+.kitap-ekle-form-wrapper textarea 
+{
+    min-height: 120px;
+    resize: vertical;
+}
+
+.kitap-ekle-form-wrapper input:focus,
+.kitap-ekle-form-wrapper select:focus,
+.kitap-ekle-form-wrapper textarea:focus 
+{
+    border-color: var(--c2);
+    box-shadow: 0 0 0 3px rgba(198, 40, 40, 0.2); /* Bordo rengin opak hali (Crimson için) */
+    background-color: #fff;
+}
+
+.kitap-ekle-form-wrapper label 
+{
+    display: block;
+    font-weight: 600;
+    color: var(--c1);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.kitap-ekle-form-wrapper input[type="file"] 
+{
+    padding: 10px 12px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}

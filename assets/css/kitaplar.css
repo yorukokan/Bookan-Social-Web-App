@@ -1,0 +1,217 @@
+/*    Ad: Okan
+   Soyad: Yörük
+      No: 22100011067    */
+
+.books-wrapper 
+{
+  padding: 40px 0;
+}
+
+.books-title 
+{
+  font-size: 32px;
+  margin-bottom: 18px;
+  color: var(--c1);
+  font-weight: 700;
+}
+
+.tur-bar 
+{
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin: 10px 0 26px 0;
+  padding: 14px 16px;
+  background: linear-gradient(135deg, var(--c4), var(--c5));
+  border-radius: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+}
+
+.tur-bar::-webkit-scrollbar 
+{
+  display: none;
+}
+
+.tur-item
+{
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #e4e4e4;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--c1);
+  text-decoration: none;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  transition: 0.22s ease;
+}
+
+.tur-icon 
+{
+  font-size: 16px;
+}
+
+.tur-text 
+{
+  font-size: 14px;
+}
+
+.tur-item:hover 
+{
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.13);
+  background: var(--c5);
+}
+
+.tur-item.active 
+{
+  background: linear-gradient(135deg, var(--c2), var(--c1));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+.books-grid 
+{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 24px;
+}
+
+.book-card 
+{
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.book-card:hover 
+{
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0,0,0,0.12);
+}
+
+.book-card img 
+{
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.book-info 
+{
+  padding: 16px 18px;
+}
+
+.book-info h3 
+{
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--c1);
+  margin-bottom: 8px;
+}
+
+.book-info p 
+{
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+.tur-badge 
+{
+  display: inline-block;
+  padding: 4px 10px;
+  background: var(--c4);
+  color: var(--c1);
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.book-card .actions 
+{
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.view-btn 
+{
+  flex: 1;
+  padding: 10px 14px;
+  background: var(--c2);
+  color: #fff;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 14px;
+  display: inline-block;
+  transition: 0.25s ease;
+}
+
+.view-btn:hover 
+{
+  background: var(--c1);
+}
+
+.quote-add-btn 
+{
+  flex: 1;
+  padding: 10px 14px;
+  background: var(--c4);
+  color: var(--c1);
+  text-align: center;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  border: 1px solid var(--c1);
+}
+
+.quote-add-btn:hover 
+{
+    background: var(--c1);
+    color: #fff;
+}
+
+.add-book-section 
+{
+    margin: 20px 0 30px 0;
+    padding-bottom: 20px;
+    border-bottom: 1px dashed var(--c4);
+}
+
+.add-book-btn 
+{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 10px 18px;
+    border-radius: 10px;
+}
+
+@media(max-width: 600px) 
+{
+  .book-card img 
+  {
+    height: 220px;
+  }
+  .tur-bar 
+  {
+    padding: 10px 12px;
+  }
+  .tur-item 
+  {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+}

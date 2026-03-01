@@ -1,0 +1,91 @@
+/*    Ad: Okan
+   Soyad: Yörük
+      No: 22100011067    */
+
+.quote-add-wrapper 
+{
+  padding: 40px 0;
+  max-width: 700px;
+  margin: auto;
+}
+
+.quote-add-card 
+{
+  background: #fff;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.09);
+}
+
+.quote-add-card h2 
+{
+  font-size: 28px;
+  color: var(--c1);
+  margin-bottom: 20px;
+}
+
+
+.quote-form label
+{
+  display: block;
+  margin-bottom: 6px;
+  font-size: 15px;
+  color: var(--c1);
+  font-weight: 600;
+}
+
+.quote-select,.quote-textarea 
+{
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  border: 1px solid var(--c3);
+  border-radius: 12px;
+  outline: none;
+  margin-bottom: 18px;
+  resize: none;
+}
+
+.quote-select:focus,.quote-textarea:focus 
+{
+  border-color: var(--c2);
+  box-shadow: 0 0 0 3px rgba(127,26,61,0.2);
+}
+
+.quote-btn 
+{
+  width: 100%;
+  padding: 14px;
+  background: var(--c2);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.quote-btn:hover 
+{
+  background: var(--c1);
+}
+
+.error-msg 
+{
+  background: #ffefef;
+  padding: 12px;
+  color: #a30000;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ffb4b4;
+}
+
+.success-msg 
+{
+  background: #e8ffed;
+  padding: 12px;
+  color: #0b7000;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #9affb1;
+}

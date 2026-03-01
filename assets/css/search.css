@@ -1,0 +1,124 @@
+/*    Ad: Okan
+   Soyad: Yörük
+      No: 22100011067    */
+
+.search-wrapper 
+{
+    padding: 40px 0;
+}
+
+.search-wrapper h2 
+{
+    font-size: 30px;
+    color: var(--c1);
+    margin-bottom: 30px;
+}
+
+.search-section 
+{
+    margin-bottom: 40px;
+}
+
+.search-section h3 
+{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--c2);
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--c4);
+    padding-bottom: 8px;
+}
+
+.kitap-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.kitap-item 
+{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: 0.2s ease;
+    gap: 15px;
+}
+
+.kitap-item:hover 
+{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+}
+
+.kitap-item img 
+{
+    width: 60px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.kitap-item .info h4 
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--c1);
+}
+
+.kitap-item .info p 
+{
+    font-size: 13px;
+    color: #555;
+    margin-top: 4px;
+}
+
+.kullanici-list 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+.kullanici-item 
+{
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: 0.2s ease;
+    gap: 15px;
+}
+
+.kullanici-item:hover 
+{
+    background: var(--c5);
+}
+
+.kullanici-avatar 
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.kullanici-adi 
+{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--c1);
+}
+.empty-message 
+{
+    padding: 20px;
+    background: #fff;
+    border-radius: 12px;
+    color: #555;
+    text-align: center;
+}
